@@ -94,7 +94,7 @@ class Calculator {
     String getResult() {
         String strResult = "";
         if (romanTrigger == 1) throw new NumberFormatException("Используются разные системы счисления");
-        else if (romanTrigger == 2) {
+        else if (romanTrigger >= 2) {
             if (result < 1) throw new NumberFormatException("В римской системе нет отрицательных чисел и ноля");
             strResult += getArabic();
         } else strResult += result;
